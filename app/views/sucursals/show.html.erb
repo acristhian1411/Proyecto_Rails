@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @sucursal.nombre %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @sucursal.direccion %>
+</p>
+
+<p>
+  <strong>Localidad:</strong>
+  <%= @sucursal.localidad %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @sucursal.telefono %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @sucursal.email %>
+</p>
+
+<%= link_to 'Editar', edit_sucursal_path(@sucursal) %> |
+<%= link_to 'Volver', sucursals_path %>

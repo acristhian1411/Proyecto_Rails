@@ -3,11 +3,13 @@
 one:
   nombre: MyString
   direccion: MyString
+  localidad: MyString
   telefono: MyString
   email: MyString
 
 two:
   nombre: MyString
   direccion: MyString
+  localidad: MyString
   telefono: MyString
   email: MyString

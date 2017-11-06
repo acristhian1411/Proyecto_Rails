@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Proveedores</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Ruc</th>
+      <th>Contacto</th>
+      <th>Direccion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proveedores.each do |proveedore| %>
+      <tr>
+        <td><%= proveedore.nombre %></td>
+        <td><%= proveedore.ruc %></td>
+        <td><%= proveedore.contacto %></td>
+        <td><%= proveedore.direccion %></td>
+        <td class="success"><%= link_to 'Show', proveedore %></td>
+        <td class="success"><%= link_to 'Edit', edit_proveedore_path(proveedore) %></td>
+        <td class="danger"><%= link_to 'Destroy', proveedore, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proveedore', new_proveedore_path %>

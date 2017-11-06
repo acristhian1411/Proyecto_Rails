@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Sucursales</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Direccion</th>
+      <th>Localidad</th>
+      <th>Telefono</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sucursals.each do |sucursal| %>
+      <tr>
+        <td><%= sucursal.nombre %></td>
+        <td><%= sucursal.direccion %></td>
+        <td><%= sucursal.localidad %></td>
+        <td><%= sucursal.telefono %></td>
+        <td><%= sucursal.email %></td>
+        <td class="success" ><%= link_to 'Mostrar', sucursal %></td>
+        <td class="success" ><%= link_to 'Editar', edit_sucursal_path(sucursal) %></td>
+        <td class="danger" ><%= link_to 'Eliminar', sucursal, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Sucursal', new_sucursal_path %>

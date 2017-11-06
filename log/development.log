@@ -65,3 +65,1367 @@ ActionController::RoutingError (No route matches [GET] "/persona/index"):
   Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (29.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSucursals (20171106010917)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (209.7ms)[0m  [1mCREATE TABLE "sucursals" ("id" serial primary key, "nombre" character varying, "direccion" character varying, "localidad" character varying, "telefono" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+
+
+Started GET "/sucursal" for 127.0.0.1 at 2017-11-05 22:11:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  /usr/lib/ruby/vendor_ruby/active_record/migration.rb:392:in `check_pending!'
+  /usr/lib/ruby/vendor_ruby/active_record/migration.rb:373:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:88:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/reloader.rb:73:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (106.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSucursals (20171106010917)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "sucursals" ("id" serial primary key, "nombre" character varying, "direccion" character varying, "localidad" character varying, "telefono" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSucursals (20171106010917)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (70.9ms)[0m  [1mCREATE TABLE "sucursals" ("id" serial primary key, "nombre" character varying, "direccion" character varying, "localidad" character varying, "telefono" character varying, "email" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20171106010917"]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sucursals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/sucursal" for 127.0.0.1 at 2017-11-05 22:13:01 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant SucursalController):
+  /usr/lib/ruby/vendor_ruby/active_support/inflector/methods.rb:261:in `const_get'
+  /usr/lib/ruby/vendor_ruby/active_support/inflector/methods.rb:261:in `block in constantize'
+  /usr/lib/ruby/vendor_ruby/active_support/inflector/methods.rb:259:in `each'
+  /usr/lib/ruby/vendor_ruby/active_support/inflector/methods.rb:259:in `inject'
+  /usr/lib/ruby/vendor_ruby/active_support/inflector/methods.rb:259:in `constantize'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:60:in `controller'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:39:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:43:in `block in serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `each'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/journey/router.rb:30:in `serve'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.8) lib/rack/etag.rb:24:in `call'
+  rack (1.6.8) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.8) lib/rack/head.rb:13:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/params_parser.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.8) lib/rack/session/abstract/id.rb:220:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/cookies.rb:560:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/query_cache.rb:36:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  /usr/lib/ruby/vendor_ruby/active_record/migration.rb:377:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:88:in `__run_callbacks__'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  /usr/lib/ruby/vendor_ruby/active_support/callbacks.rb:81:in `run_callbacks'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/callbacks.rb:27:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/reloader.rb:73:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:38:in `call_app'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `block in call'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `block in tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:26:in `tagged'
+  /usr/lib/ruby/vendor_ruby/active_support/tagged_logging.rb:68:in `tagged'
+  /usr/lib/ruby/vendor_ruby/rails/rack/logger.rb:20:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  /usr/lib/ruby/vendor_ruby/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/engine.rb:518:in `call'
+  /usr/lib/ruby/vendor_ruby/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/routes/_table.html.erb (30.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (101.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.5ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:13:21 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.5ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1599ms (Views: 1595.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.self-dc7ca70a767a5e5b3367ec24c6895ce009c86a8f8481a35437927b2b56689a80.css?body=1" for 127.0.0.1 at 2017-11-05 22:13:23 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 22:13:23 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 22:13:23 -0300
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 22:13:25 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (42.4ms)
+  Rendered sucursals/new.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 92ms (Views: 79.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:13:29 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.7ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 41ms (Views: 35.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 22:13:33 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.3ms)
+  Rendered sucursals/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sucursals" for 127.0.0.1 at 2017-11-05 22:14:11 -0300
+Processing by SucursalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CvokLsJ/Qycf6xs73RQ3g0Aa2kOk7YemdPGGZKkix1FyTUrP32M02izFPwUJp5nVoHYF4eCNIoh7swRPZbMWxg==", "sucursal"=>{"nombre"=>"Suc. Artigas", "direccion"=>"calle parana", "localidad"=>"Gral Artigas", "telefono"=>"312", "email"=>"ad@gmail.com"}, "commit"=>"Create Sucursal"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sucursals" ("nombre", "direccion", "localidad", "telefono", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["nombre", "Suc. Artigas"], ["direccion", "calle parana"], ["localidad", "Gral Artigas"], ["telefono", "312"], ["email", "ad@gmail.com"], ["created_at", "2017-11-06 01:14:11.514313"], ["updated_at", "2017-11-06 01:14:11.514313"]]
+  [1m[35m (1.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/sucursals/1
+Completed 302 Found in 14ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/sucursals/1" for 127.0.0.1 at 2017-11-05 22:14:11 -0300
+Processing by SucursalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSucursal Load (0.2ms)[0m  [1mSELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered sucursals/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 73ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:14:16 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (5.6ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 59ms (Views: 52.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/sucursals/1/edit" for 127.0.0.1 at 2017-11-05 22:14:23 -0300
+Processing by SucursalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSucursal Load (0.3ms)[0m  [1mSELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered sucursals/_form.html.erb (10.0ms)
+  Rendered sucursals/edit.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals/1" for 127.0.0.1 at 2017-11-05 22:14:26 -0300
+Processing by SucursalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered sucursals/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:14:29 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (5.8ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/sucursals/1" for 127.0.0.1 at 2017-11-05 22:23:47 -0300
+Processing by SucursalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered sucursals/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:31:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.4ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 10430ms (Views: 10414.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.self-68012e80bfacdeb87ef60dd55bf6a77ea28c5ca2d6eea9e018ed9fd423cd575c.css?body=1" for 127.0.0.1 at 2017-11-05 22:31:45 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2017-11-05 22:31:45 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:33:31 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (1.8ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 3943ms (Views: 3937.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-0cbd109a6f8fdd84ac2b9fb1739184970126283e132b0b0778b4eadfcfa5deaa.css?body=1" for 127.0.0.1 at 2017-11-05 22:33:35 -0300
+
+
+Started GET "/assets/application.self-cdd5e05540eb94f65f1025ab0222a182732cfad8173fd6bd9bec9761b11bac95.js?body=1" for 127.0.0.1 at 2017-11-05 22:33:35 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:33:40 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (2.4ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 145ms (Views: 139.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:33:41 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.4ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 123ms (Views: 117.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-dc7ca70a767a5e5b3367ec24c6895ce009c86a8f8481a35437927b2b56689a80.css?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/application.self-0cbd109a6f8fdd84ac2b9fb1739184970126283e132b0b0778b4eadfcfa5deaa.css?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/assets/application.self-cdd5e05540eb94f65f1025ab0222a182732cfad8173fd6bd9bec9761b11bac95.js?body=1" for 127.0.0.1 at 2017-11-05 22:35:03 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:35:18 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (1.4ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 124ms (Views: 122.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:35:22 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (4.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 122ms (Views: 116.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:37:24 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.3ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (2.4ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/scaffolds.self-dc7ca70a767a5e5b3367ec24c6895ce009c86a8f8481a35437927b2b56689a80.css?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/application.self-0cbd109a6f8fdd84ac2b9fb1739184970126283e132b0b0778b4eadfcfa5deaa.css?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/assets/application.self-cdd5e05540eb94f65f1025ab0222a182732cfad8173fd6bd9bec9761b11bac95.js?body=1" for 127.0.0.1 at 2017-11-05 22:38:02 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:39:46 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.7ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 3992ms (Views: 3990.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-981ceb1d1ba02213d1a6e7bd147f79e8e56d0e55661f9d22cf1a9d2002988eae.css?body=1" for 127.0.0.1 at 2017-11-05 22:39:51 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:40:24 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:42 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.4ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:49 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:50 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.3ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 141ms (Views: 140.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:50 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (1.8ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 121ms (Views: 119.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:52 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.3ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:53 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (2.4ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 148ms (Views: 145.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:53 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.1ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 133ms (Views: 128.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:45:54 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 115ms (Views: 114.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:46:44 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.6ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 3863ms (Views: 3861.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-12602e15beb05eca3ae903cffccc7fc3312d0e112833ed3152a8f0d6014bde23.css?body=1" for 127.0.0.1 at 2017-11-05 22:46:48 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:46:51 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (3.9ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 108ms (Views: 103.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:46:52 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.3ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:46:52 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (3.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 114ms (Views: 110.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:46:52 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.6ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 100ms (Views: 94.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 22:47:28 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4497ms (Views: 4496.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-dc7ca70a767a5e5b3367ec24c6895ce009c86a8f8481a35437927b2b56689a80.css?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/application.self-981ceb1d1ba02213d1a6e7bd147f79e8e56d0e55661f9d22cf1a9d2002988eae.css?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-11-05 22:47:33 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:07:24 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (3.6ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 113ms (Views: 105.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/sucursals/1" for 127.0.0.1 at 2017-11-05 23:07:31 -0300
+Processing by SucursalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSucursal Load (0.7ms)[0m  SELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered sucursals/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 124ms (Views: 102.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:07:34 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.0ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 102ms (Views: 97.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:07:37 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (36.6ms)
+  Rendered sucursals/new.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 110ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:07:40 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (1.6ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.4ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 57ms (Views: 52.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/scaffolds.self-dc7ca70a767a5e5b3367ec24c6895ce009c86a8f8481a35437927b2b56689a80.css?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/application.self-981ceb1d1ba02213d1a6e7bd147f79e8e56d0e55661f9d22cf1a9d2002988eae.css?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:32 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (1.8ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 127ms (Views: 124.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/scaffolds.self-dc7ca70a767a5e5b3367ec24c6895ce009c86a8f8481a35437927b2b56689a80.css?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/application.self-981ceb1d1ba02213d1a6e7bd147f79e8e56d0e55661f9d22cf1a9d2002988eae.css?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-11-05 23:08:33 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:10:03 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (2.8ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 84ms (Views: 80.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:15:50 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:16:43 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.5ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:18:33 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (4.0ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:18:37 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (5.3ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 90ms (Views: 84.6ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:18:47 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (3.7ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 88ms (Views: 83.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:21:17 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (1.1ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:22:09 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (5.1ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:22:47 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (4.5ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 67ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:22:48 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.9ms)
+  Rendered sucursals/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:22:51 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.3ms)
+  Rendered sucursals/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 96ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:22:51 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (7.7ms)
+  Rendered sucursals/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:22:52 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (5.9ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 107ms (Views: 106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:22:53 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (3.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 125ms (Views: 121.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:22:54 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (6.1ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 85ms (Views: 78.4ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:23:23 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.9ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:25 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (11.8ms)
+  Rendered sucursals/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 126ms (Views: 125.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:26 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (8.6ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:27 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (7.3ms)
+  Rendered sucursals/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 126ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:27 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.3ms)
+  Rendered sucursals/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:28 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (7.3ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:44 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (7.2ms)
+  Rendered sucursals/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 87ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:54 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (3.0ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 153ms (Views: 152.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:23:58 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (3.8ms)
+  Rendered sucursals/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:24:01 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (10.4ms)
+  Rendered sucursals/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 132ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:24:02 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (4.8ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 96ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:24:03 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.8ms)
+  Rendered sucursals/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 120ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:24:04 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (7.4ms)
+  Rendered sucursals/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 130ms (Views: 129.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:25:13 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (2.1ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:29: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+..._to 'Sucursales' sucursals_path;@output_buffer.safe_append='...
+...                               ^):
+  app/views/layouts/application.html.erb:29: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (49.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:25:37 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.8ms)
+  Rendered sucursals/new.html.erb within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:29: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...'.freeze;link_to, 'Sucursales', sucursals_path;@output_buffe...
+...                               ^):
+  app/views/layouts/application.html.erb:29: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:25:51 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.1ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:26:32 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (3.0ms)
+  Rendered sucursals/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:26:54 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (2.0ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 68ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:28:31 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (6.9ms)
+  Rendered sucursals/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 69ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:28:33 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (4.3ms)
+  Rendered sucursals/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 106ms (Views: 105.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:32:33 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (4.8ms)
+  Rendered sucursals/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:32:35 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (3.2ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 85ms (Views: 81.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:32:38 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (2.2ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:32:39 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (1.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 118ms (Views: 115.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:32:59 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.6ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 76ms (Views: 71.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:33:01 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (3.2ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 77ms (Views: 73.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:33:02 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (2.6ms)
+  Rendered sucursals/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 115ms (Views: 114.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:33:03 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.4ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 139ms (Views: 138.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:33:06 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (5.0ms)
+  Rendered sucursals/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 191ms (Views: 190.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:33:07 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (2.8ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 164ms (Views: 161.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/sucursals/1" for 127.0.0.1 at 2017-11-05 23:33:13 -0300
+Processing by SucursalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSucursal Load (1.4ms)[0m  [1mSELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered sucursals/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 90ms (Views: 86.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:33:19 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (2.4ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 114ms (Views: 111.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:33:21 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (7.9ms)
+  Rendered sucursals/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:33:22 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (1.7ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 149ms (Views: 146.3ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/sucursals/1" for 127.0.0.1 at 2017-11-05 23:34:25 -0300
+Processing by SucursalsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"goal5Vi6S4GosDSx0uEAmchtGF8LZLJRZrgIPlcp3jX6McsERaY8fJueEI8GUq7PKAHH/U8EF39p+ooVm7gPog==", "id"=>"1"}
+  [1m[35mSucursal Load (2.4ms)[0m  SELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "sucursals" WHERE "sucursals"."id" = $1  [["id", 1]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/sucursals
+Completed 302 Found in 10ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:34:25 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.3ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sucursals/new" for 127.0.0.1 at 2017-11-05 23:34:28 -0300
+Processing by SucursalsController#new as HTML
+  Rendered sucursals/_form.html.erb (8.4ms)
+  Rendered sucursals/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 130ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sucursals" for 127.0.0.1 at 2017-11-05 23:34:39 -0300
+Processing by SucursalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBDiZx1drLj/iXt+NGsvXeUG7W021WBUIf+aUItfDnNMp4yGAEHbRcynX0Dg2IELBWoyz3K1xXouvRh7R87f5A==", "sucursal"=>{"nombre"=>"Suc ruta1", "direccion"=>"ad", "localidad"=>"asd", "telefono"=>"a", "email"=>"asd"}, "commit"=>"Guardar"}
+  [1m[36m (1.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sucursals" ("nombre", "direccion", "localidad", "telefono", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["nombre", "Suc ruta1"], ["direccion", "ad"], ["localidad", "asd"], ["telefono", "a"], ["email", "asd"], ["created_at", "2017-11-06 02:34:39.421268"], ["updated_at", "2017-11-06 02:34:39.421268"]]
+  [1m[36m (167.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/sucursals/2
+Completed 302 Found in 177ms (ActiveRecord: 169.4ms)
+
+
+Started GET "/sucursals/2" for 127.0.0.1 at 2017-11-05 23:34:39 -0300
+Processing by SucursalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSucursal Load (1.6ms)[0m  SELECT  "sucursals".* FROM "sucursals" WHERE "sucursals"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered sucursals/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:34:42 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (3.4ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 3.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.1ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sucursals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProveedores (20171106023935)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (35.1ms)[0m  [1mCREATE TABLE "proveedores" ("id" serial primary key, "nombre" character varying, "ruc" character varying, "contacto" character varying, "direccion" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20171106023935"]]
+  [1m[36m (32.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'proveedores'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'sucursals'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-05 23:42:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.5ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 5611ms (Views: 5595.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/proveedores.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-05 23:42:25 -0300
+
+
+Started GET "/assets/proveedores.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-05 23:42:25 -0300
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-05 23:42:27 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[36mProveedore Load (5.6ms)[0m  [1mSELECT "proveedores".* FROM "proveedores"[0m
+  Rendered proveedores/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 183ms (Views: 170.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-05 23:43:03 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[35mProveedore Load (2.9ms)[0m  SELECT "proveedores".* FROM "proveedores"
+  Rendered proveedores/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 79ms (Views: 75.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-05 23:43:58 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[36mProveedore Load (1.8ms)[0m  [1mSELECT "proveedores".* FROM "proveedores"[0m
+  Rendered proveedores/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 90ms (Views: 87.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/proveedores/new" for 127.0.0.1 at 2017-11-05 23:44:01 -0300
+Processing by ProveedoresController#new as HTML
+  Rendered proveedores/_form.html.erb (40.1ms)
+  Rendered proveedores/new.html.erb within layouts/application (61.5ms)
+Completed 200 OK in 183ms (Views: 171.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/proveedores" for 127.0.0.1 at 2017-11-05 23:44:16 -0300
+Processing by ProveedoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O4adr0NEr2S2akfkXgnwEQlloZ4J1PuyyH0l0fnSbOFDMfNOXljYmYVEY9qKul5H6Ql+PE20XpzHP6f6NUO9dg==", "proveedore"=>{"nombre"=>"la yutenha", "ruc"=>"151", "contacto"=>"asdf", "direccion"=>"asfd"}, "commit"=>"Create Proveedore"}
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "proveedores" ("nombre", "ruc", "contacto", "direccion", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nombre", "la yutenha"], ["ruc", "151"], ["contacto", "asdf"], ["direccion", "asfd"], ["created_at", "2017-11-06 02:44:16.666408"], ["updated_at", "2017-11-06 02:44:16.666408"]]
+  [1m[35m (21.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/proveedores/1
+Completed 302 Found in 35ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/proveedores/1" for 127.0.0.1 at 2017-11-05 23:44:16 -0300
+Processing by ProveedoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProveedore Load (0.2ms)[0m  [1mSELECT  "proveedores".* FROM "proveedores" WHERE "proveedores"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered proveedores/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 125ms (Views: 111.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-05 23:44:19 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[35mProveedore Load (3.5ms)[0m  SELECT "proveedores".* FROM "proveedores"
+  Rendered proveedores/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 121ms (Views: 115.9ms | ActiveRecord: 3.5ms)
