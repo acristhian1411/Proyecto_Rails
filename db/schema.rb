@@ -11,10 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171106023935) do
+ActiveRecord::Schema.define(version: 20171107183736) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "marca_proveedors", force: :cascade do |t|
+    t.integer  "marca_id"
+    t.integer  "proveedore_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "marca_proveedors", ["marca_id"], name: "index_marca_proveedors_on_marca_id", using: :btree
+  add_index "marca_proveedors", ["proveedore_id"], name: "index_marca_proveedors_on_proveedore_id", using: :btree
+
+  create_table "marcas", force: :cascade do |t|
+    t.string   "descrip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "proveedores", force: :cascade do |t|
     t.string   "nombre"
@@ -24,6 +46,15 @@ ActiveRecord::Schema.define(version: 20171106023935) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "sub_categories", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "sub_categories", ["category_id"], name: "index_sub_categories_on_category_id", using: :btree
 
   create_table "sucursals", force: :cascade do |t|
     t.string   "nombre"
@@ -35,4 +66,7 @@ ActiveRecord::Schema.define(version: 20171106023935) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "marca_proveedors", "marcas"
+  add_foreign_key "marca_proveedors", "proveedores"
+  add_foreign_key "sub_categories", "categories"
 end

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :sub_categories
+  resources :categories
+  resources :marcas
   resources :proveedores
   resources :sucursals
   # The priority is based upon order of creation: first created -> highest priority.

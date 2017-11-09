@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
+gem 'select2-rails', '~> 4.0', '>= 4.0.3'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
