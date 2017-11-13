@@ -6896,3 +6896,666 @@ Processing by SubCategoriesController#edit as HTML
   Rendered sub_categories/_form.html.erb (8.1ms)
   Rendered sub_categories/edit.html.erb within layouts/application (9.0ms)
 Completed 200 OK in 88ms (Views: 81.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 19:52:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (1.1ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 17749ms (Views: 17707.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/trello-theme.self-6e9ecef95aeedcadaead71d3a861f51f258273da8b3c84fdc02e3795ff0df087.css?body=1" for 127.0.0.1 at 2017-11-12 19:53:07 -0300
+
+
+Started GET "/assets/application.self-b3023f9425bd14b3bba9c9bab35b52a91bf58820eb9a2fceceb695ef6c847abd.css?body=1" for 127.0.0.1 at 2017-11-12 19:53:07 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (4.3ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 295ms (Views: 289.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/select2.self-7e0b4f482a4c6087f591eb0fa3989f41a290e685cffef9c752ff3b2d5c857dba.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/select2-bootstrap.self-3ffc37f1a32dab4a7ae2c2bfadfb07245be9d684221a5b5cfcef3f982e5b3446.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/marcas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/sub_categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/proveedores.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/trello-theme.self-6e9ecef95aeedcadaead71d3a861f51f258273da8b3c84fdc02e3795ff0df087.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/application.self-b3023f9425bd14b3bba9c9bab35b52a91bf58820eb9a2fceceb695ef6c847abd.css?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:14 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/select2.self-3d0dca634dc5f4aee8c2dddef05674d9a674214500fd7e89959dc9e7251bb717.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/marcas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/proveedores.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/sub_categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/assets/application.self-cf46c65ecd4b93d1db77780790a52e420260595e6becac48b624689168569bed.js?body=1" for 127.0.0.1 at 2017-11-12 19:56:15 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 19:57:32 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.7ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 255ms (Views: 252.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/select2.self-7e0b4f482a4c6087f591eb0fa3989f41a290e685cffef9c752ff3b2d5c857dba.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/select2-bootstrap.self-3ffc37f1a32dab4a7ae2c2bfadfb07245be9d684221a5b5cfcef3f982e5b3446.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/marcas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/sub_categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/proveedores.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/trello-theme.self-6e9ecef95aeedcadaead71d3a861f51f258273da8b3c84fdc02e3795ff0df087.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/application.self-b3023f9425bd14b3bba9c9bab35b52a91bf58820eb9a2fceceb695ef6c847abd.css?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:33 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/select2.self-3d0dca634dc5f4aee8c2dddef05674d9a674214500fd7e89959dc9e7251bb717.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/marcas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/proveedores.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/sub_categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/assets/application.self-cf46c65ecd4b93d1db77780790a52e420260595e6becac48b624689168569bed.js?body=1" for 127.0.0.1 at 2017-11-12 19:57:34 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 19:58:40 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (3.5ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 3.5ms)
+
+SyntaxError (/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:50: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (30.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.9ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (120.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (219.6ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:00:03 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (3.4ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 3.4ms)
+
+SyntaxError (/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:50: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (29.1ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.0ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (157.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (220.4ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:00:11 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.5ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.5ms)
+
+SyntaxError (/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/usuario/sites/Proyecto_Rails/app/views/layouts/application.html.erb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/layouts/application.html.erb:50: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_source.erb (57.4ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_trace.html.erb (19.6ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/lib/ruby/vendor_ruby/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (135.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (144.8ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:02:57 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (0.6ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 343ms (Views: 339.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/select2.self-7e0b4f482a4c6087f591eb0fa3989f41a290e685cffef9c752ff3b2d5c857dba.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/select2-bootstrap.self-3ffc37f1a32dab4a7ae2c2bfadfb07245be9d684221a5b5cfcef3f982e5b3446.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/marcas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/sub_categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/proveedores.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/trello-theme.self-6e9ecef95aeedcadaead71d3a861f51f258273da8b3c84fdc02e3795ff0df087.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/application.self-b3023f9425bd14b3bba9c9bab35b52a91bf58820eb9a2fceceb695ef6c847abd.css?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:58 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/select2.self-3d0dca634dc5f4aee8c2dddef05674d9a674214500fd7e89959dc9e7251bb717.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/marcas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/proveedores.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/sub_categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/assets/application.self-cf46c65ecd4b93d1db77780790a52e420260595e6becac48b624689168569bed.js?body=1" for 127.0.0.1 at 2017-11-12 20:02:59 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:03:03 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.6ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 254ms (Views: 251.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-12 20:03:06 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[35mProveedore Load (9.8ms)[0m  SELECT "proveedores".* FROM "proveedores"
+  Rendered proveedores/index.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 327ms (Views: 304.8ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/marcas" for 127.0.0.1 at 2017-11-12 20:03:07 -0300
+Processing by MarcasController#index as HTML
+  [1m[36mMarca Load (15.7ms)[0m  [1mSELECT "marcas".* FROM "marcas"[0m
+  Rendered marcas/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 277ms (Views: 246.3ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/marcas" for 127.0.0.1 at 2017-11-12 20:03:09 -0300
+Processing by MarcasController#index as HTML
+  [1m[35mMarca Load (5.2ms)[0m  SELECT "marcas".* FROM "marcas"
+  Rendered marcas/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 398ms (Views: 390.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/marcas" for 127.0.0.1 at 2017-11-12 20:03:11 -0300
+Processing by MarcasController#index as HTML
+  [1m[36mMarca Load (0.5ms)[0m  [1mSELECT "marcas".* FROM "marcas"[0m
+  Rendered marcas/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 403ms (Views: 401.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:03:13 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (6.7ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 428ms (Views: 420.4ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-12 20:03:14 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[36mProveedore Load (2.5ms)[0m  [1mSELECT "proveedores".* FROM "proveedores"[0m
+  Rendered proveedores/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 481ms (Views: 475.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/proveedores" for 127.0.0.1 at 2017-11-12 20:29:25 -0300
+Processing by ProveedoresController#index as HTML
+  [1m[35mProveedore Load (0.8ms)[0m  SELECT "proveedores".* FROM "proveedores"
+  Rendered proveedores/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 320ms (Views: 318.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/select2.self-7e0b4f482a4c6087f591eb0fa3989f41a290e685cffef9c752ff3b2d5c857dba.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/select2-bootstrap.self-3ffc37f1a32dab4a7ae2c2bfadfb07245be9d684221a5b5cfcef3f982e5b3446.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/marcas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/sub_categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/proveedores.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/trello-theme.self-6e9ecef95aeedcadaead71d3a861f51f258273da8b3c84fdc02e3795ff0df087.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/application.self-b3023f9425bd14b3bba9c9bab35b52a91bf58820eb9a2fceceb695ef6c847abd.css?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:26 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/select2.self-3d0dca634dc5f4aee8c2dddef05674d9a674214500fd7e89959dc9e7251bb717.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/marcas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/proveedores.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/sub_categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/assets/application.self-cf46c65ecd4b93d1db77780790a52e420260595e6becac48b624689168569bed.js?body=1" for 127.0.0.1 at 2017-11-12 20:29:27 -0300
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:29:34 -0300
+Processing by SucursalsController#index as HTML
+  [1m[36mSucursal Load (0.6ms)[0m  [1mSELECT "sucursals".* FROM "sucursals"[0m
+  Rendered sucursals/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 339ms (Views: 335.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sucursals" for 127.0.0.1 at 2017-11-12 20:30:33 -0300
+Processing by SucursalsController#index as HTML
+  [1m[35mSucursal Load (4.8ms)[0m  SELECT "sucursals".* FROM "sucursals"
+  Rendered sucursals/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 250ms (Views: 241.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/select2.self-7e0b4f482a4c6087f591eb0fa3989f41a290e685cffef9c752ff3b2d5c857dba.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/select2-bootstrap.self-3ffc37f1a32dab4a7ae2c2bfadfb07245be9d684221a5b5cfcef3f982e5b3446.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/proveedores.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/marcas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/sub_categories.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/sucursals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/trello-theme.self-6e9ecef95aeedcadaead71d3a861f51f258273da8b3c84fdc02e3795ff0df087.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/application.self-b3023f9425bd14b3bba9c9bab35b52a91bf58820eb9a2fceceb695ef6c847abd.css?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:34 -0300
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/select2.self-3d0dca634dc5f4aee8c2dddef05674d9a674214500fd7e89959dc9e7251bb717.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/marcas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/proveedores.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/sub_categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/sucursals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
+
+
+Started GET "/assets/application.self-cf46c65ecd4b93d1db77780790a52e420260595e6becac48b624689168569bed.js?body=1" for 127.0.0.1 at 2017-11-12 20:30:35 -0300
