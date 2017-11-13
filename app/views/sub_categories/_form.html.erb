@@ -18,8 +18,8 @@
   <div class="field">
     <%= f.label :category_id %><br>
     
-    <%= f.hidden_field :category_id %>
-<%= select_tag("category", options_for_select(@category.map{|c|["#{c.descripcion}", c.id]})) %>
+    
+<%= select_tag("sub_category[category_id]",  options_for_select(@category.map{|c|["#{c.descripcion}", c.id]})) %>
    
 
   </div>
@@ -30,9 +30,10 @@
 
 <script type="text/javascript">
           $(document).ready(function() {
-      $('select#category').select2({
-        placeholder: "Categoria",
-        allowClear: true
-      });
-    });
+            console.log("hola")
+          $('select#sub_category_category_id').select2({
+            placeholder: "Categoria",
+            allowClear: true
+          });
+        });
 </script>

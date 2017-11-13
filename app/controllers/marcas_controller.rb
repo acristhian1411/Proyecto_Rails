@@ -5,6 +5,8 @@ class MarcasController < ApplicationController
   # GET /marcas.json
   def index
     @marcas = Marca.all
+    @prov = Proveedore.all
+    @marca_pr = MarcaProveedor.all
   end
 
   # GET /marcas/1

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @marca_proveedor.marca %>
+</p>
+
+<p>
+  <strong>Proveedore:</strong>
+  <%= @marca_proveedor.proveedore %>
+</p>
+
+<%= link_to 'Edit', edit_marca_proveedor_path(@marca_proveedor) %> |
+<%= link_to 'Back', marca_proveedors_path %>

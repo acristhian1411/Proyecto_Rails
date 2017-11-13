@@ -2,7 +2,7 @@
 
 <h1>Listing Sub Categories</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Descripcion</th>
@@ -15,10 +15,10 @@
     <% @sub_categories.each do |sub_category| %>
       <tr>
         <td><%= sub_category.descripcion %></td>
-        <td><%= sub_category.category %></td>
-        <td><%= link_to 'Show', sub_category %></td>
-        <td><%= link_to 'Edit', edit_sub_category_path(sub_category) %></td>
-        <td><%= link_to 'Destroy', sub_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= sub_category.category.descripcion %></td>
+        <td><span class="glyphicon glyphicon-eye-open"><%= link_to '   Mostrar', sub_category %></span></td>
+        <td><span class="glyphicon glyphicon-pencil"><%= link_to '   Editar', edit_sub_category_path(sub_category) %></span></td>
+        <td><span class="glyphicon glyphicon-trash"><%= link_to '   Eliminar', sub_category, method: :delete, data: { confirm: 'Esta seguro?' } %></span></td>
       </tr>
     <% end %>
   </tbody>

@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :marca_proveedors
+  get 'proveedor_marca/index'
+
+  get 'proveedor_marca/show'
+
+  get 'proveedor_marca/create'
+
   resources :sub_categories
   resources :categories
   resources :marcas
