@@ -20,7 +20,26 @@
 @import "trello-theme";
 
 
+@import "font";
+@import "custom";
+@import "style.blue";
+@import "style.default";
+@import "style.green";
+@import "style.pink";
+@import "style.red";
+@import "style.sea";
+@import "style.violet";
+@import "css/bootstrap-grid.min";
+@import "css/bootstrap-reboot";
+@import "css/bootstrap-reboot.min";
+@import "css/bootstrap-grid";
+@import "css/bootstrap.min";
+@import "css/bootstrap";
 
+
+
+
+/*
 @media (min-width: 768px) {
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
@@ -40,3 +59,4 @@
   }
 }
 
+*/

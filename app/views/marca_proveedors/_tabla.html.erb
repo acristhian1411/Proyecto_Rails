@@ -1,0 +1,23 @@
+<table class="table table-stripped">
+  <thead>
+    <tr align="left">
+      <th ><font color="black">Nombre</font></th>
+      <th ><font color="black">Ruc</font></th>
+
+      <th colspan="4" >Opciones</th>
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prov.each do |prov| %>
+      <tr>
+        <td><font color="black"><%= prov.nombre %></font></td>
+         <td><font color="black"><%= prov.ruc %></font></td>
+        <td><%= check_box_tag(:algo) %>
+  <%= label_tag(:algo, "Seleccionar") %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table> 

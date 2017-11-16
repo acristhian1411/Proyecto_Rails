@@ -14,8 +14,24 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require select2
+//= require charts-custom
+//= require charts-home
+
+//= require vendor/chart.js/Chart.bundle
+//= require vendor/chart.js/Chart.bundle.min
+//= require vendor/chart.js/Chart
+//= require vendor/chart.js/Chart.min
+
+//= require vendor/bootstrap/js/bootstrap
+//= require vendor/bootstrap/js/bootstrap.min
+
+
+//= require front
 //= require turbolinks
 //= require_tree .
+
+
+
 $( "#dropdown" ).select2({
     theme: "bootstrap"
 });

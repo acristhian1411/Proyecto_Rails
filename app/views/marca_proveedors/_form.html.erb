@@ -1,15 +1,5 @@
 <%= form_for(@marca_proveedor) do |f| %>
-  <% if @marca_proveedor.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@marca_proveedor.errors.count, "error") %> prohibited this marca_proveedor from being saved:</h2>
-
-      <ul>
-      <% @marca_proveedor.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  
 
   <div class="field">
     <%= f.label :marca_id %><br>

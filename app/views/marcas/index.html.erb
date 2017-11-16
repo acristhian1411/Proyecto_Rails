@@ -35,35 +35,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Marcas por proveedores</h4>
+          <h4 class="modal-title"><font color="black">Marcas por proveedores</font></h4>
         </div>
         <div class="modal-body">
-<h1>Proveedores</h1>
+<h1><font color="black">Proveedores</font></h1>
 
-<table class="table table-stripped">
-  <thead>
-    <tr align="left">
-      <th >Nombre</th>
-      <th >Ruc</th>
 
-      <th colspan="4" >Opciones</th>
-     
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @prov.each do |prov| %>
-      <tr>
-        <td><%= prov.nombre %></td>
-         <td><%= prov.ruc %></td>
-        <td><%= check_box_tag(:algo) %>
-  <%= label_tag(:algo, "Seleccionar") %></td>
-        
-      </tr>
-    <% end %>
-  </tbody>
-</table> 
-
+<%= render  'marca_proveedors/tabla' %>
 
 
     
