@@ -1,0 +1,20 @@
+{:uriI"›file://app/assets/javascripts/vendor/jquery.cookie/component.json?type=application/json&id=fca29f36ed15a4c4e6371333c8501bf16f88e514095a0b9448d04dc2a5949827:ET:load_pathI"app/assets/javascripts;T:filenameI"?app/assets/javascripts/vendor/jquery.cookie/component.json;T:	nameI"#vendor/jquery.cookie/component;T:logical_pathI"(vendor/jquery.cookie/component.json;T:content_typeI"application/json;T:sourceI"T{
+  "name": "jquery.cookie",
+  "repo": "carhartl/jquery-cookie",
+  "description": "A simple, lightweight jQuery plugin for reading, writing and deleting cookies",
+  "version": "1.4.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "jquery.cookie.js",
+  "scripts": [
+    "jquery.cookie.js"
+  ]
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Mfile-digest://app/assets/javascripts/vendor/jquery.cookie/component.json;TTF:charsetI"
+utf-8;F:digest"%!_ì/@j0ŠºÔ¯y@sZÀêXØYSKl¯5Pq€Œ:lengthiT:dependencies_digest"%Šo@è
+dó"†ÙÓ,o­æ<RÕ/H€ïÀôÏh:idI"Efca29f36ed15a4c4e6371333c8501bf16f88e514095a0b9448d04dc2a5949827;F:
+mtimel+¾ØäY

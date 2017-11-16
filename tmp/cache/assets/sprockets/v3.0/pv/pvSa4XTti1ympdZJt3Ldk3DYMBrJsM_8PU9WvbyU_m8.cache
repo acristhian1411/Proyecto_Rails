@@ -1,0 +1,37 @@
+{:uriI"Ÿfile://app/assets/javascripts/vendor/jquery.cookie/cookie.jquery.json?type=application/json&id=3b32dcbb35d581738ce0dc3cb5f2994d703bf570231deeb581b3d1fc29bfa3d2:ET:load_pathI"app/assets/javascripts;T:filenameI"Capp/assets/javascripts/vendor/jquery.cookie/cookie.jquery.json;T:	nameI"'vendor/jquery.cookie/cookie.jquery;T:logical_pathI",vendor/jquery.cookie/cookie.jquery.json;T:content_typeI"application/json;T:sourceI"B{
+  "name": "cookie",
+  "version": "1.4.1",
+  "title":  "jQuery Cookie",
+  "description": "A simple, lightweight jQuery plugin for reading, writing and deleting cookies.",
+  "author": {
+    "name": "Klaus Hartl",
+    "url": "https://github.com/carhartl"
+  },
+  "maintainers": [
+    {
+      "name": "Klaus Hartl",
+      "url": "https://github.com/carhartl"
+    },
+    {
+      "name": "Fagner Martins",
+      "url": "https://github.com/FagnerMartinsBrack"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/carhartl/jquery-cookie/master/MIT-LICENSE.txt"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.2"
+  },
+  "bugs": "https://github.com/carhartl/jquery-cookie/issues",
+  "homepage": "https://github.com/carhartl/jquery-cookie",
+  "docs": "https://github.com/carhartl/jquery-cookie#readme"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/javascripts/vendor/jquery.cookie/cookie.jquery.json;TTF:charsetI"
+utf-8;F:digest"%¹á³¸Zkãn4•6é™…ÓÖ™‚óËà‘$^§öxã¬:lengthiB:dependencies_digest"%`*V>ÑEğÍÉ—ÃdÄnœè®ü›·®`jRÓª®Á:idI"E3b32dcbb35d581738ce0dc3cb5f2994d703bf570231deeb581b3d1fc29bfa3d2;F:
+mtimel+¾ØäY
