@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171112223748) do
+ActiveRecord::Schema.define(version: 20171117132323) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,21 @@ ActiveRecord::Schema.define(version: 20171112223748) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "cantidad"
+    t.string   "cod_bar"
+    t.float    "precio_costo"
+    t.float    "precio_venta"
+    t.integer  "sub_category_id"
+    t.integer  "marca_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "products", ["marca_id"], name: "index_products_on_marca_id", using: :btree
+  add_index "products", ["sub_category_id"], name: "index_products_on_sub_category_id", using: :btree
 
   create_table "proveedores", force: :cascade do |t|
     t.string   "nombre"
@@ -68,5 +83,7 @@ ActiveRecord::Schema.define(version: 20171112223748) do
 
   add_foreign_key "marca_proveedors", "marcas"
   add_foreign_key "marca_proveedors", "proveedores"
+  add_foreign_key "products", "marcas"
+  add_foreign_key "products", "sub_categories"
   add_foreign_key "sub_categories", "categories"
 end
